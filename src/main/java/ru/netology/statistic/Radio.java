@@ -2,7 +2,7 @@ package ru.netology.statistic;
 
 public class Radio {
     private int currentStation;
-    public int currentVolume;
+    private int currentVolume;
 
     public void setCurrentStation(int currentStation) {
         if (currentStation < 0) {
