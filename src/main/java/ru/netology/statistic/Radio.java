@@ -1,7 +1,8 @@
 package ru.netology.statistic;
 
 public class Radio {
-    public int currentStation;
+    private int currentStation;
+    public int currentVolume;
 
     public void setCurrentStation(int currentStation) {
         if (currentStation < 0) {
@@ -17,14 +18,31 @@ public class Radio {
         return currentStation;
     }
 
-
-    public void setNextStation() {
-        if (currentStation == 0) {
+    public void setCurrentVolume(int currentVolume) {
+        if (currentVolume < 0) {
             return;
         }
+        if (currentVolume > 10) {
+            return;
+        }
+        this.currentVolume = currentVolume;
+    }
+
+    public int getCurrentVolume() {
+        return currentVolume;
+    }
+
+
+    public void setNextStation() {
+//        if (currentStation == 0) {
+//            return;
+//        }
         if (currentStation < 9) {
             currentStation = currentStation + 1;
         } else currentStation = 0;
+        {
+
+        }
 
     }
 
@@ -47,32 +65,18 @@ public class Radio {
     }
 
 
-    public int currentVolume;
-
-    public void setCurrentVolume(int currentVolume) {
-        if (currentVolume < 0) {
-            return;
-        }
-        if (currentVolume > 10) {
-            return;
-        }
-        this.currentVolume = currentVolume;
-    }
-
-    public int getCurrentVolume() {
-        return currentVolume;
-    }
-
-
     public int plusVolume;
 
     public void setPlusVolume() {
-        if (currentVolume == 0) {
-            return;
-        }
+//        if (currentVolume == 0) {
+//            return;
+//        }
         if (currentVolume < 10) {
             currentVolume = currentVolume + 1;
         } else currentStation = 0;
+        {
+
+        }
     }
 
     public int getPlusVolume() {
@@ -92,6 +96,7 @@ public class Radio {
     }
 
     public int getMinusVolume() {
+
         return currentVolume;
     }
 }

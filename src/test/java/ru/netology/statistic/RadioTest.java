@@ -17,10 +17,10 @@ public class RadioTest {
     @Test
     void nextStation() {
         Radio cond = new Radio();
-        cond.setCurrentStation(9);
+        cond.setCurrentStation(5);
         cond.setNextStation();
         int actual = cond.getNextStation();
-        int expected = 0;
+        int expected = 6;
         assertEquals(expected, actual);
     }
 
@@ -37,9 +37,9 @@ public class RadioTest {
     @Test
     void currentVolume() {
         Radio cond = new Radio();
-        cond.setCurrentVolume(50);
+        cond.setCurrentVolume(5);
         int actual = cond.getCurrentVolume();
-        int expected = 0;
+        int expected = 5;
         assertEquals(expected, actual);
     }
 
