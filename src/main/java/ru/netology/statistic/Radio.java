@@ -2,6 +2,7 @@ package ru.netology.statistic;
 
 public class Radio {
     public int currentStation;
+
     public void setCurrentStation(int currentStation) {
         if (currentStation < 0) {
             return;
@@ -16,18 +17,82 @@ public class Radio {
         return currentStation;
     }
 
-    public int nextStation;
-    public void setNextStation(int nextStation){
-        if (currentStation<9){
-            currentStation = currentStation +1;
 
+    public void setNextStation() {
+        if (currentStation == 0) {
+            return;
         }
-        this.nextStation = nextStation;
+        if (currentStation < 9) {
+            currentStation = currentStation + 1;
+        } else currentStation = 0;
+
     }
-    public int getNextStation(){
-        return nextStation;
+
+    public int getNextStation() {
+        return currentStation;
     }
 
 
+    public void setPrevStation() {
+        if (currentStation == 0) {
+            currentStation = 9;
+        }
+        if (currentStation < 9) {
+            currentStation = currentStation - 1;
+        }
+    }
+
+    public int getPrevStation() {
+        return currentStation;
+    }
+
+
+    public int currentVolume;
+
+    public void setCurrentVolume(int currentVolume) {
+        if (currentVolume < 0) {
+            return;
+        }
+        if (currentVolume > 10) {
+            return;
+        }
+        this.currentVolume = currentVolume;
+    }
+
+    public int getCurrentVolume() {
+        return currentVolume;
+    }
+
+
+    public int plusVolume;
+
+    public void setPlusVolume() {
+        if (currentVolume == 0) {
+            return;
+        }
+        if (currentVolume < 10) {
+            currentVolume = currentVolume + 1;
+        } else currentStation = 0;
+    }
+
+    public int getPlusVolume() {
+        return currentVolume;
+    }
+
+
+    public int minusVolume;
+
+    public void setMinusVolume() {
+        if (currentVolume == 0) {
+            currentVolume = 10;
+        }
+        if (currentVolume < 10) {
+            currentVolume = currentVolume - 1;
+        }
+    }
+
+    public int getMinusVolume() {
+        return currentVolume;
+    }
 }
 
