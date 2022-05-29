@@ -39,9 +39,7 @@ public class Radio {
 //        }
         if (currentStation < 9) {
             currentStation = currentStation + 1;
-        } else currentStation = 0;
-        {
-
+        } else currentStation = 0;{
         }
 
     }
@@ -73,9 +71,7 @@ public class Radio {
 //        }
         if (currentVolume < 10) {
             currentVolume = currentVolume + 1;
-        } else currentStation = 0;
-        {
-
+        } else currentVolume = 0;{
         }
     }
 
