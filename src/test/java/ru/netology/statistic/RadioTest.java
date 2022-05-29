@@ -26,7 +26,8 @@ public class RadioTest {
         int expected = 5;
         assertEquals(expected, actual);
     }
-@Test
+
+    @Test
     void currentStation1() {
         Radio cond = new Radio();
         cond.setCurrentStation(-5);
@@ -43,6 +44,7 @@ public class RadioTest {
         int expected = 0;
         assertEquals(expected, actual);
     }
+
     @Test
     void nextStation() {
         Radio cond = new Radio();
@@ -52,6 +54,7 @@ public class RadioTest {
         int expected = 6;
         assertEquals(expected, actual);
     }
+
     @Test
     void nextStation1() {
         Radio cond = new Radio();
@@ -71,6 +74,7 @@ public class RadioTest {
         int expected = 4;
         assertEquals(expected, actual);
     }
+
     @Test
     void prevStation1() {
         Radio cond = new Radio();
@@ -89,6 +93,7 @@ public class RadioTest {
         int expected = 5;
         assertEquals(expected, actual);
     }
+
     @Test
     void currentVolume1() {
         Radio cond = new Radio();
@@ -97,6 +102,7 @@ public class RadioTest {
         int expected = 0;
         assertEquals(expected, actual);
     }
+
     @Test
     void currentVolume2() {
         Radio cond = new Radio();
@@ -115,6 +121,7 @@ public class RadioTest {
         int expected = 2;
         assertEquals(expected, actual);
     }
+
     @Test
     void plusVolume1() {
         Radio cond = new Radio();
@@ -134,6 +141,7 @@ public class RadioTest {
         int expected = 4;
         assertEquals(expected, actual);
     }
+
     @Test
     void minusVolume1() {
         Radio cond = new Radio();
